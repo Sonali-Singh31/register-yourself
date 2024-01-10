@@ -1,4 +1,7 @@
+import Link from 'next/link';
+
 export default function Home() {
+  
     return (
       <main className="flex text-center px-20 mt-10 flex-col  items-center justify-center ">
         <div className="w-4/12 mx-auto mt-8 p-8 bg-gray-100 rounded-md">
@@ -95,3 +98,7 @@ export default function Home() {
     );
   }
   
+ 
+     
+             
+       

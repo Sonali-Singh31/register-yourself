@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="flex text-center px-20 mt-10 flex-col  items-center justify-center ">
@@ -21,8 +23,26 @@ export default function Home() {
 
         <form className="mt-6">
           <div className="mb-4 text-left">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
-              UserName
+            <label
+              htmlFor="username"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              USERNAME
+            </label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              className="w-full p-2 border border-gray-300 rounded"
+              required
+            />
+          </div>
+          <div className="mb-4 text-left">
+            <label
+              htmlFor="branch"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              BRANCH
             </label>
             <input
               type="text"
@@ -37,37 +57,51 @@ export default function Home() {
               htmlFor="username"
               className="block text-gray-700 text-sm font-bold mb-2"
             >
-              Branch
+              Email
             </label>
             <input
               type="text"
+              id="username"
               name="username"
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
           </div>
           <div className="mb-4 text-left">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
-              Email
-            </label>
-            <input
-              type="email"
-              className="w-full p-2 border border-gray-300 rounded"
-              required
-            />
-          </div>
-          <div className="mb-4 text-left">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
+            <label
+              htmlFor="username"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
               Year
             </label>
             <input
               type="text"
+              id="username"
+              name="username"
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
           </div>
           <div className="mb-4 text-left">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
+            <label
+              htmlFor="email"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className="w-full p-2 border border-gray-300 rounded"
+              required
+            />
+          </div>
+          <div className="mb-4 text-left">
+            <label
+              htmlFor="password"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
               Password
             </label>
             <input
@@ -79,22 +113,37 @@ export default function Home() {
             />
           </div>
           <div className="mb-4 text-left">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
+            <label
+              htmlFor="password"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
               Phone Number
             </label>
             <input
-              type="tel"
+              type="password"
+              id="password"
+              name="password"
               className="w-full p-2 border border-gray-300 rounded"
-              required
             />
           </div>
           <button
             type="submit"
             className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-700"
           >
-            Register
+            SIGN UP
           </button>
         </form>
+      </div>
+      <div class="flex flex-wrap mt-6 ">
+        <div class="text-left">
+          <small class="text-grey-100  cursor-pointer text-sm">
+            Already Registered?{" "}
+            <span class="bg-cyan-500 text-gray-800 px-2 py-2 rounded ml-1 mr-1 mb-1 uppercase shadow-md hover:shadow-lg inline-flex items-center font-bold text-xs">
+              {" "}
+              <Link href="/components">Login</Link>{" "}
+            </span>
+          </small>
+        </div>
       </div>
     </main>
   );

@@ -21,7 +21,7 @@ export default function Home() {
 
         <form className="mt-6">
           <div className="mb-4 text-left">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
+            <label htmlFor='username'className="block text-gray-700 text-sm font-bold mb-2">
               USERNAME
             </label>
             <input
@@ -29,19 +29,20 @@ export default function Home() {
               id="username"
               name="username"
               className="w-full p-2 border border-gray-300 rounded"
+              
               required
             />
           </div>
           <div className="mb-4 text-left">
             <label
-              htmlFor="username"
+              htmlFor="branch"
               className="block text-gray-700 text-sm font-bold mb-2"
             >
               BRANCH
             </label>
             <input
               type="text"
-              id="username"
+              id="branch"
               name="username"
               className="w-full p-2 border border-gray-300 rounded"
               required
@@ -49,30 +50,30 @@ export default function Home() {
           </div>
           <div className="mb-4 text-left">
             <label
-              htmlFor="username"
+              htmlFor="email"
               className="block text-gray-700 text-sm font-bold mb-2"
             >
               EMAIL
             </label>
             <input
-              type="text"
-              id="username"
-              name="username"
+              type="email"
+              id="email"
+              name="email"
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
           </div>
           <div className="mb-4 text-left">
             <label
-              htmlFor="username"
+              htmlFor="year"
               className="block text-gray-700 text-sm font-bold mb-2"
             >
               YEAR
             </label>
             <input
               type="text"
-              id="username"
-              name="username"
+              id="year"
+              name="year"
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
@@ -95,17 +96,15 @@ export default function Home() {
           </div>
           <div className="mb-4 text-left">
             <label
-              htmlFor="password"
+              htmlFor="phone"
               className="block text-gray-700 text-sm font-bold mb-2"
             >
               PHONE NUMBER
             </label>
             <input
-              type="password"
-              id="password"
-              name="password"
+              type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required
               className="w-full p-2 border border-gray-300 rounded"
-              required
+              
             />
           </div>
           <button

@@ -21,9 +21,10 @@ export default function Home() {
 
         <form className="mt-6">
           <div className="mb-4 text-left">
-            <label htmlFor='username'className="block text-gray-700 text-sm font-bold mb-2">
-              USERNAME
-            </label>
+          <label htmlFor="username" className="block text-gray-700 text-sm font-bold mb-2">
+          USERNAME
+          </label>
+
             <input
               type="text"
               id="username"
@@ -43,7 +44,7 @@ export default function Home() {
             <input
               type="text"
               id="branch"
-              name="username"
+              name="branch"
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
@@ -117,8 +118,8 @@ export default function Home() {
       </div>
         <div class="flex flex-wrap mt-6 ">
           <div class="text-left">
-            <small class="text-grey-100  cursor-pointer text-sm">Already Registered? <span class="bg-cyan-500 text-gray-800 px-2 py-2 rounded ml-1 mr-1 mb-1 uppercase shadow-md hover:shadow-lg inline-flex items-center font-bold text-xs"> <Link  href="/components" >Login</Link> </span>
-            </small>
+          <small class="text-grey-100 text-sm">Already Registered? <span class="bg-cyan-500 text-gray-800 px-2 py-2 rounded ml-1 mr-1 mb-1 uppercase shadow-md hover:shadow-lg inline-flex items-center font-bold text-xs"><Link href="/components">Login</Link></span></small>
+
             </div>
             </div>
     </main>

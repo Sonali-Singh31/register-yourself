@@ -12,7 +12,9 @@ export default function Home() {
           </h2>
 
           <span className="text-black text-xs">SIGN UP WITH</span>
-          <button className="text-black  mb-5">Google</button>
+          <button className="text-black font-bold w-35 mb-5 border-gray border-2 mt-2  p-2 rounded-md text-sm shadow hover:shadow-b-lg hover:text-gray hover:bg-blue-200">
+            <div className=" ">GOOGLE</div>
+          </button>
           <div className=" border border-1  w-full border-gray-400 shadow-[0_1px_2px_rgba(57,62,86,0.5)]"></div>
           <p className="text-gray-600 mt-3"> Or sign up with credentials</p>
         </div>
@@ -39,62 +41,33 @@ export default function Home() {
             </label>
             <input
               type="text"
-              id="username"
               name="username"
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
           </div>
           <div className="mb-4 text-left">
-            <label
-              htmlFor="username"
-              className="block text-gray-700 text-sm font-bold mb-2"
-            >
-              Email
-            </label>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              className="w-full p-2 border border-gray-300 rounded"
-              required
-            />
-          </div>
-          <div className="mb-4 text-left">
-            <label
-              htmlFor="username"
-              className="block text-gray-700 text-sm font-bold mb-2"
-            >
-              Year
-            </label>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              className="w-full p-2 border border-gray-300 rounded"
-              required
-            />
-          </div>
-          <div className="mb-4 text-left">
-            <label
-              htmlFor="email"
-              className="block text-gray-700 text-sm font-bold mb-2"
-            >
+            <label className="block text-gray-700 text-sm font-bold mb-2">
               Email
             </label>
             <input
               type="email"
-              id="email"
-              name="email"
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
           </div>
           <div className="mb-4 text-left">
-            <label
-              htmlFor="password"
-              className="block text-gray-700 text-sm font-bold mb-2"
-            >
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Year
+            </label>
+            <input
+              type="text"
+              className="w-full p-2 border border-gray-300 rounded"
+              required
+            />
+          </div>
+          <div className="mb-4 text-left">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
               Password
             </label>
             <input
@@ -106,16 +79,11 @@ export default function Home() {
             />
           </div>
           <div className="mb-4 text-left">
-            <label
-              htmlFor="password"
-              className="block text-gray-700 text-sm font-bold mb-2"
-            >
+            <label className="block text-gray-700 text-sm font-bold mb-2">
               Phone Number
             </label>
             <input
-              type="password"
-              id="password"
-              name="password"
+              type="tel"
               className="w-full p-2 border border-gray-300 rounded"
               required
             />

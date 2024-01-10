@@ -33,6 +33,7 @@ const SignIn = () => {
               type="text"
               id="username"
               name="username"
+              autoComplete='email'
               className="w-full p-2 border border-gray-300 rounded"
               required
             />

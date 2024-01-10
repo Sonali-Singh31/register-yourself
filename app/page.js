@@ -60,6 +60,7 @@ export default function Home() {
               type="email"
               id="email"
               name="email"
+              autoComplete='email'
               className="w-full p-2 border border-gray-300 rounded"
               required
             />

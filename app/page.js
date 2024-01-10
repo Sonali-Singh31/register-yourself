@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,16 +21,17 @@ export default function Home() {
 
         <form className="mt-6">
           <div className="mb-4 text-left">
-          <label htmlFor="username" className="block text-gray-700 text-sm font-bold mb-2">
-          USERNAME
-          </label>
-
+            <label
+              htmlFor="username"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              USERNAME
+            </label>
             <input
               type="text"
               id="username"
               name="username"
-              className="w-full p-2 border text-black border-gray-300 rounded"
-              
+              className="w-full p-2 border border-gray-300 rounded"
               required
             />
           </div>
@@ -80,7 +81,7 @@ export default function Home() {
               required
             />
           </div>
-          
+
           <div className="mb-4 text-left">
             <label
               htmlFor="password"
@@ -104,9 +105,13 @@ export default function Home() {
               PHONE NUMBER
             </label>
             <input
-              type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required
-              className="w-full p-2 border border-gray-300 text-black rounded"
-              
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="123-456-7890"
+              required
+              className="w-full p-2 border border-gray-300 rounded"
             />
           </div>
           <button
@@ -117,12 +122,17 @@ export default function Home() {
           </button>
         </form>
       </div>
-        <div class="flex flex-wrap mt-6 ">
-          <div class="text-left">
-          <small class="text-grey-100 text-sm">Already Registered? <span class="bg-cyan-500 text-gray-800 px-2 py-2 rounded ml-1 mr-1 mb-1 uppercase shadow-md hover:shadow-lg inline-flex items-center font-bold text-xs"><Link href="/components">Login</Link></span></small>
-
-            </div>
-            </div>
+      <div class="flex flex-wrap mt-6 ">
+        <div class="text-left">
+          <small class="text-grey-100  cursor-pointer text-sm">
+            Already Registered?{" "}
+            <span class="bg-cyan-500 text-gray-800 px-2 py-2 rounded ml-1 mr-1 mb-1 uppercase shadow-md hover:shadow-lg inline-flex items-center font-bold text-xs">
+              {" "}
+              <Link href="/components">Login</Link>{" "}
+            </span>
+          </small>
+        </div>
+      </div>
     </main>
   );
 }

@@ -29,7 +29,7 @@ export default function Home() {
               type="text"
               id="username"
               name="username"
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border text-black border-gray-300 rounded"
               
               required
             />
@@ -45,7 +45,7 @@ export default function Home() {
               type="text"
               id="branch"
               name="branch"
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 text-black border border-gray-300 rounded"
               required
             />
           </div>
@@ -61,7 +61,7 @@ export default function Home() {
               id="email"
               name="email"
               autoComplete='email'
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 text-black border border-gray-300 rounded"
               required
             />
           </div>
@@ -76,7 +76,7 @@ export default function Home() {
               type="text"
               id="year"
               name="year"
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 text-black border border-gray-300 rounded"
               required
             />
           </div>
@@ -92,7 +92,7 @@ export default function Home() {
               type="password"
               id="password"
               name="password"
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border text-black border-gray-300 rounded"
               required
             />
           </div>
@@ -105,7 +105,7 @@ export default function Home() {
             </label>
             <input
               type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border border-gray-300 text-black rounded"
               
             />
           </div>

@@ -34,13 +34,13 @@ const SignIn = () => {
               id="username"
               name="username"
               autoComplete='email'
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border border-gray-300 rounded text-black"
               required
             />
           </div>
           
           
-          <div className="mb-4 text-left">
+          <div className="mb-4 text-left text-black">
             <label
               htmlFor="password"
               className="block text-gray-700 text-sm font-bold mb-2"
@@ -51,7 +51,7 @@ const SignIn = () => {
               type="password"
               id="password"
               name="password"
-              className="w-full p-2 border border-gray-300 rounded"
+              className="w-full p-2 border border-gray-300 rounded text-black"
               required
             />
           </div>
